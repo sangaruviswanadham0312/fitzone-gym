@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import "./App.css";
 
@@ -37,7 +36,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "https://fitzone-gym-gtl5.onrender.com",
+        "https://fitzone-gym-gtl5.onrender.com/auth/login",
         {
           method: "POST",
           headers: {
@@ -72,7 +71,7 @@ function App() {
     } catch (err) {
       setError(
         err.message === "Failed to fetch"
-          ? "Backend run avutundo check cheyyi. Port 8082 verify cheyyi."
+          ? "Backend server connect kaledu. Render free instance sleep mode lo undochu, 30-40 seconds aagi malli login click cheyyi."
           : err.message
       );
     } finally {
