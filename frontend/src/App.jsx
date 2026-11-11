@@ -37,7 +37,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://localhost:8082/auth/login",
+        "https://fitzone-gym-gtl5.onrender.com",
         {
           method: "POST",
           headers: {
